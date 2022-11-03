@@ -50,15 +50,16 @@
                     <p>Number of sells: ${numberOfSells}</p>
                 </div>
                 `
+                // Add a button to go back to previous page
+                const button = document.createElement("button");
+                button.innerHTML = "Back";
+                button.addEventListener("click", () => {
+                    window.history.back();
+                });
+                document.body.appendChild(button);
             })
 
-        // Add a button to go back to previous page
-        const button = document.createElement("button");
-        button.innerHTML = "Back";
-        button.addEventListener("click", () => {
-            window.history.back();
-        });
-        document.body.appendChild(button);
+        
     </script>
 </body>
 
